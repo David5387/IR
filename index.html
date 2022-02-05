@@ -1,0 +1,53 @@
+ 
+<html>
+  <head>
+    <title>Image Recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class = "container">
+    <center>
+<h3 class = "btn btn-default">Image Recognition</h3>
+<br>
+<br>
+<p>This model is trained to identify the following objects:</p>
+<hr>
+<b>
+  White Polar Bear Sleeping Bag
+  <hr>
+  Peter Rabbit's Blue Sticker
+  <hr>
+  Harry Potter Disc
+  <hr>
+  Grade 5 Piano Book
+  <hr>
+</b>
+<label>(MUST HAVE FOLLOWING OBJECTS OR WHITE POLAR BEAR WILL NOT SLEEP!)Your Webcam View:</label>
+<div id = "TurnOnWebcam">
+</div>
+<br>
+<button onclick = "capture()" id = "button1" class = "btn btn-info">Capture Image</button>
+<button onclick = "checknoworwhitepolarbearwontsleep()" id = "button2" class = "btn btn-success">Identify It Now</button>
+<br><br><div id = "TurnOnPicture">
+<br> <br>
+
+</div>
+<br> <br>
+<p style = "font-size:20px;">Object: <span id = "span1"></span></p>
+<p style = "font-size:20px;">Accuracy: <span id = "span2"></span></p>
+  </div>
+  
+<script src="main.js"></script>
+</center>
+  </body>
+</html>

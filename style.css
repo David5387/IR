@@ -1,0 +1,33 @@
+body{
+    background-color: lightcyan;
+    font-family: monospace;
+    color:lightseagreen;
+}
+h3{
+    width:50%;
+    font-size:30px;
+}
+p{
+    font-size:20px;
+    font-weight:600px;
+}
+hr{
+    background-color:lightslategray;
+    height:2px;
+}
+b{
+    font-size: 18px;
+    color:salmon;
+}
+label{
+    font-size:30px;
+}
+button{
+    font-size:18px;
+}
+#TurnOnWebcam, #TurnOnPicture{
+    border: ridge 3px dimgray;
+    border-radius:10px;
+    width:420px;
+    height:250px;
+}
